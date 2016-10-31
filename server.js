@@ -6,6 +6,9 @@ var port = process.env.PORT || 3000;
 
 app.use('/', function(req, res) {
   res.sendFile(path.join(__dirname, '/index.html'));
+  $f = fopen("hi.txt", "r");
+  fgets($f); 
+  fclose($f);
 });
 
 app.listen(port, function() {
