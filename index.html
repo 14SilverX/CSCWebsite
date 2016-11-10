@@ -1,23 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" type="text/css" href="style.css" title="style-sheet"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" title="style-sheet"/>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	
   <head>
-  <style>
-	div.container {
-    	width: 100%;
-    	border: 1px solid gray;
-	}
-
-	header, footer {
-    	padding: 1em;
-    	color: rgb(200,200,200);
-    	background-color: rgb(147,0,0);
-    	clear: left;
-    	text-align: center;
-	}
-  </style>
     <title>WPI Cue Sports Club</title>
     <meta charset="utf-8">
   </head>
@@ -28,12 +14,12 @@
     <h1>WPI Cue Sports Club</h1>
     </header>
     
-    <p style="font-style: underline; text-align: center; font-size: 120%">
+    <div id="tabs"><span>
     	<a href="https://wpi-csc-website.herokuapp.com/">Home</a> | 
-    	<a href="https://lookaside.fbsbx.com/file/WPI%20CSC%20Rules%20of%20Play.docx?token=AWwCe3kxRpfw75qVAKPz_GMP6hSAGKb4sAkJrYZmDbK6pCaJOXZw2iAiACwo4pnLBvE-k-c7ak761z7DTJNI-MEl-9tEFk744uyaKmzySBLYo9c1PGFakfjRnWTh8j_XQr_qUbnOKW4ol6BtF1psHeVTItLmtE4zLz11H0h3uQ3Xfp7lUAZBa9lQOUeGt1CCrAo">Rules of Play</a> | 
-    </p>
+    	<a href="https://lookaside.fbsbx.com/file/WPI%20CSC%20Rules%20of%20Play.docx?token=AWwCe3kxRpfw75qVAKPz_GMP6hSAGKb4sAkJrYZmDbK6pCaJOXZw2iAiACwo4pnLBvE-k-c7ak761z7DTJNI-MEl-9tEFk744uyaKmzySBLYo9c1PGFakfjRnWTh8j_XQr_qUbnOKW4ol6BtF1psHeVTItLmtE4zLz11H0h3uQ3Xfp7lUAZBa9lQOUeGt1CCrAo">Rules of Play</a> 
+    </span></div>
     
-    <nav style="float: left; max-width: 300px; margin: 0; padding: 1em; border: 1px solid gray">
+    <nav class="announcements">
     	<h2>Announcements</h2>
     	
     	<p id="announce"></p>
@@ -51,27 +37,27 @@
 		</script>
     </nav>
     
-    <article style="border: 1px solid gray; padding: 1em; overflow: hidden">
+    <article class="homepage">
     	<h1 style="color:red">PLAYER OF THE WEEK</h1>
-	    <img src="https://raw.githubusercontent.com/14SilverX/CSCWebsite/master/Images/PlayerOfTheWeek/POTW/POTW.jpg" alt="Player of the Week" width="320" height="240">
+	    <img src="https://raw.githubusercontent.com/14SilverX/CSCWebsite/master/Images/PlayerOfTheWeek/POTW/POTW.jpg" alt="Player of the week" width="560" height="420">
 	    <h2>Jason Abel</h2> 
 	    
 	    <h2>Meeting Times</h2>
 	    <ul>
-	    	<li style="font-size: 120%">Wednesday: 5pm - 7pm</li>
-	    	<li style="font-size: 120%">Saturday: 4pm - 7pm</li>
+	    	<li class="largetext">Wednesday: 5pm - 7pm</li>
+	    	<li class="largetext">Saturday: 4pm - 7pm</li>
 	    </ul>
 	    
-	    <p style="font-size: 150%"><b>Game of the Week</b>
-	    <br style="font-size: 120%">English Billiards
+	    <div class="largetext"><b>Game of the Week</b>
+	    <br>English Billiards
 	    <br><b>Next Week</b>
-	    <br style="font-size: 120%">8 Ball</p>
+	    <br class="largetext">8 Ball</div>
     </article>
     
     <footer>
-    	<p>Contact the officers at: cuesportsclubexec@wpi.edu</p>
-    	<p>Join the <a href="https://www.facebook.com/groups/396898637158001/">Facebook Group</a></p>
-    	<p>Join the <a href="https://cuesportsclub.slack.com/messages/general/">Slack Group</a></p>
+    	<div class="silverback">Contact the officers at: cuesportsclubexec@wpi.edu</div>
+    	<div class="silverback largetext">Join the <a href="https://www.facebook.com/groups/396898637158001/">Facebook Group</a></div>
+    	<div class="silverback largetext">Join the <a href="https://cuesportsclub.slack.com/messages/general/">Slack Group</a></div>
     </footer>
   </body>
   </div>
