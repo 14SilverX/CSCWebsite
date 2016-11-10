@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+#tabs{
+    font-style: underline;
+    text-align: center;
+    font-size: 120%;
+}
+
+.announcements{
+    float: left;
+    max-width: 300px;
+    margin: 0;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+.homepage{
+    border: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.largetext{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 120%;
+}
+
+.silverback{
+    color: rgb(147,0,0);
+    background-color: rgb(200,200,200);
+}
+
+header, footer {
+    padding: 1em;
+    color: rgb(200,200,200);
+    background-color: rgb(147,0,0);
+    clear: left;
+    text-align: center;
+}
