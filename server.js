@@ -26,7 +26,10 @@ var server = http.createServer (function (req, res) {
     case '/roster':
     	showRoster(res)
     	break
-    case '/editroster_pw_1447':
+    case '/editroster_pw_PO01l':
+    	editRoster(res)
+    	break
+    case '/editroster':
     	var d = '';
   	req.on('data', function(c) {
     	d = d+c
@@ -37,13 +40,13 @@ var server = http.createServer (function (req, res) {
       		if(q.newplayer) {
         		players.push( q.newplayer )
         		fs.writeFileSync('roster.txt', players.join('\n'))
-        		sendIndex(res)
+        		editRoster(res)
       		}
       		else if(q.findplayer){
       			players = players.filter(function(p){
       				return p.substring(0, q.findplayer.length) == q.findplayer
       			})
-      			sendIndex(res)
+      			editRoster(res)
       		}
       		else if(q.removeplayer){
       			fs.writeFileSync('roster.txt', players.filter(function(p){
@@ -54,7 +57,7 @@ var server = http.createServer (function (req, res) {
       .toString()
       .trim()
       .split("\n");
-        		sendIndex(res)
+        		editRoster(res)
       		}
       		else{
       			players = 
@@ -62,7 +65,7 @@ var server = http.createServer (function (req, res) {
       .toString()
       .trim()
       .split("\n");
-        		sendIndex(res)
+        		editRoster(res)
       		}
     	}
     	d = ''
@@ -93,7 +96,31 @@ function showRoster(res){
     res.write("<p>" + d + "</p>");
   });
 
-  res.write("<footer><form action=\"/editroster_pw_1447\" method=\"post\">");
+  res.write("<footer>");
+  res.write("<div class=\"silverback largetext\">Back to the <a href=\"../\">Main Page</a></div>");
+  res.write("</footer>");
+
+
+  res.write("</body>");
+  res.write("</html>");
+  res.end();
+}
+
+function editRoster(res){
+	res.writeHead(200, {"Content-Type": "text/html"});
+
+  res.write("<html>");
+  res.write("<head>");
+  res.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" title=\"style-sheet\"/>");
+  res.write("</head>");
+  res.write("<body>");
+
+  res.write("<header><h1>WPI CSC Roster</h1></header>");
+  players.forEach(function(d) {
+    res.write("<p>" + d + "</p>");
+  });
+
+  res.write("<footer><form action=\"/editroster\" method=\"post\">");
   res.write("<div>");
   res.write("<label for=\"newplayer\" > Add New Player </label>");
   res.write("<input id=\"newplayer\" name=\"newplayer\" type=\"text\">");
@@ -109,6 +136,7 @@ function showRoster(res){
   res.write("<label for=\"removeplayer\" > Remove Player </label>");
   res.write("<input id=\"removeplayer\" name=\"removeplayer\" type=\"text\">");
   res.write("<button type=\"remove\">Remove</button>");
+  res.write("<div class=\"silverback largetext\">Back to the <a href=\"../\">Main Page</a></div>");
   res.write("</form></footer>");
 
 
