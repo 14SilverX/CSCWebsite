@@ -1,7 +1,8 @@
 var http = require('http')
   , fs   = require('fs')
   , url  = require('url')
-  , port = 8080;
+  , qs = require('querystring')
+  , port = 8080
 
 var server = http.createServer (function (req, res) {
 	players = 
