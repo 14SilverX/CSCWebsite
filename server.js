@@ -26,7 +26,7 @@ var server = http.createServer (function (req, res) {
     case '/roster':
     	showRoster(res)
     	break
-    case '/editroster':
+    case '/editroster_pw_1447':
     	var d = '';
   	req.on('data', function(c) {
     	d = d+c
@@ -93,7 +93,7 @@ function showRoster(res){
     res.write("<p>" + d + "</p>");
   });
 
-  res.write("<footer><form action=\"/updateroster\" method=\"post\">");
+  res.write("<footer><form action=\"/editroster_pw_1447\" method=\"post\">");
   res.write("<div>");
   res.write("<label for=\"newplayer\" > Add New Player </label>");
   res.write("<input id=\"newplayer\" name=\"newplayer\" type=\"text\">");
