@@ -40,3 +40,18 @@ header, footer {
     clear: left;
     text-align: center;
 }
+
+.announce_new_date{
+    font-style: bold;
+    color: rgb(255, 0, 0);
+}
+
+.announce_date{
+    font-style: bold;
+    color: rgb(0, 0, 0);
+}
+
+.announce_text{
+    font-style: none;
+    color: rgb(0, 0, 0);
+}
