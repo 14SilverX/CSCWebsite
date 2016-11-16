@@ -1,18 +1,18 @@
-<b style="color: red; font-style: bold;"><br><br>11/15/2016:</b>
-<p style="color: black; font-style: normal;">Congratulations to Tony Chenard for winning English Billiards this week! Next week is 8 Ball! See you guys tomorrow and Saturday!
+<b class="announce_new_date"><br><br>11/15/2016:</b>
+<p class="announce_text">Congratulations to Tony Chenard for winning English Billiards this week! Next week is 8 Ball! See you guys tomorrow and Saturday!
 
-<b style="color: red; font-style: bold;"><br><br>11/5/2016:</b>
-<p style="color: black; font-style: normal;">Congratulations to Jason Abel for winning league this week! Next week we will be playing English Billiards! Sign up for the doubles tournament in the CC! See you at the tables!
+<b class="announce_date"><br><br>11/5/2016:</b>
+<p class="announce_text">Congratulations to Jason Abel for winning league this week! Next week we will be playing English Billiards! Sign up for the doubles tournament in the CC! See you at the tables!
 
-<b style="color: red; font-style: bold;"><br><br>11/2/2016:</b>
-<p style="color: black; font-style: normal;">Dont forget! 9 Ball from 5pm to 7pm at the tables!
+<b class="announce_date"><br><br>11/2/2016:</b>
+<p class="announce_text">Dont forget! 9 Ball from 5pm to 7pm at the tables!
 
-<b style="color: red; font-style: bold;"><br><br>11/1/2016:</b>
-<p style="color: black; font-style: normal;">Just a heads up to everyone that the tournament this term will be the first doubles tournament! So grab your most trusted friend and start practicing scotch doubles!
+<b class="announce_date"><br><br>11/1/2016:</b>
+<p class="announce_text">Just a heads up to everyone that the tournament this term will be the first doubles tournament! So grab your most trusted friend and start practicing scotch doubles!
 
-<b style="color: red; font-style: bold;"><br><br>10/31/2016:</b>
-<p style="color: black; font-style: normal;">Happy Halloween!
+<b class="announce_date"><br><br>10/31/2016:</b>
+<p class="announce_text">Happy Halloween!
 
-<b style="color: red; font-style: bold;"><br><br>10/31/2016:</b>
-<p style="color: black; font-style: normal;">Next week we will be playing 9 Ball during the normal meeting times! See you at the tables!
+<b class="announce_date"><br><br>10/31/2016:</b>
+<p class="announce_text">Next week we will be playing 9 Ball during the normal meeting times! See you at the tables!
 </p>
