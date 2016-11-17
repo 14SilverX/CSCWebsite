@@ -26,6 +26,9 @@ var server = http.createServer (function (req, res) {
     case '/roster':
     	showRoster(res)
     	break
+    case '/league':
+    	runLeague(res)
+    	break
     case '/editroster_pw_PO01l':
     	editRoster(res)
     	break
@@ -81,6 +84,28 @@ var server = http.createServer (function (req, res) {
 
 server.listen(process.env.PORT || port);
 console.log('listening on 8080')
+
+function runLeague(res){
+	res.writeHead(200, {"Content-Type": "text/html"});
+
+  res.write("<html>");
+  res.write("<head>");
+  res.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" title=\"style-sheet\"/>");
+  res.write("</head>");
+  res.write("<body>");
+
+  res.write("<header><h1>League Sheet</h1></header>");
+  
+
+  res.write("<footer>");
+  res.write("<div class=\"silverback largetext\">Back to the <a href=\"../\">Main Page</a></div>");
+  res.write("</footer>");
+
+
+  res.write("</body>");
+  res.write("</html>");
+  res.end();
+}
 
 function showRoster(res){
 	res.writeHead(200, {"Content-Type": "text/html"});
