@@ -23,6 +23,9 @@ var server = http.createServer (function (req, res) {
     case '/roster.txt':
       sendFile(res, 'roster.txt', 'text/txt')
       break
+    case '/counter':
+      sendFile(res, 'html5game/index.html')
+      break
     case '/roster':
     	showRoster(res)
     	break
