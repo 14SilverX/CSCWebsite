@@ -7,7 +7,7 @@ var http = require('http')
 
 var server = http.createServer (function (req, res) {
 	players = 
-    fs.readFileSync('roster', 'utf8')
+    fs.readFileSync('roster.txt', 'utf8')
       .toString()
       .trim()
       .split("\n");
