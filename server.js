@@ -4,6 +4,7 @@ var http = require('http')
   , qs = require('querystring')
   , port = 8080
 
+
 var server = http.createServer (function (req, res) {
 	players = 
     fs.readFileSync('https://raw.githubusercontent.com/14SilverX/CSCWebsite/master/Images/PlayerOfTheWeek/POTW/POTW.jpg', 'utf8')
