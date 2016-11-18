@@ -6,7 +6,7 @@ var http = require('http')
 
 var server = http.createServer (function (req, res) {
 	players = 
-    fs.readFileSync('roster.txt', 'utf8')
+    fs.readFileSync('https://raw.githubusercontent.com/14SilverX/CSCWebsite/master/Images/PlayerOfTheWeek/POTW/POTW.jpg', 'utf8')
       .toString()
       .trim()
       .split("\n");
@@ -22,9 +22,6 @@ var server = http.createServer (function (req, res) {
       break
     case '/roster.txt':
       sendFile(res, 'roster.txt', 'text/txt')
-      break
-    case '/counter':
-      sendFile(res, 'html5game/index.html')
       break
     case '/roster':
     	showRoster(res)
